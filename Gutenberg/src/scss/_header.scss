@@ -1,0 +1,92 @@
+header{
+    height: 100px;
+    background-color: white;
+    padding: 20px 0;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    margin-bottom: 1.5em;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    // display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav_menu_btn{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.header-nav-about-Us{
+    // text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+
+    transition: font-size 0.5s;
+}
+
+.header-nav-projects{
+    // padding: 0 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+
+    transition: font-size 0.5s;
+}
+
+.header-nav-contacts{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+
+    transition: font-size 0.3s;
+}
+
+.header-nav>:hover{
+    background-color: #E5E5E5;
+}
+
+.social-net{
+    
+    width: 214px;
+    height: 72px;
+    margin-right: 25px;
+
+    background: url(image.png);
+    cursor: pointer;
+}
+
+
+
