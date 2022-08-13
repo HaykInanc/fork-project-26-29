@@ -1,0 +1,108 @@
+
+.page_1{
+    position: relative;
+    background-color: white;
+    padding: 7% 4%;
+    margin-bottom: 1.5em;
+    img {max-width: 100%;}
+}
+
+.header_page_1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 82px;
+    
+    color: #000000; 
+}
+
+.content_page_1{
+    display: flex;
+    flex-direction: column;
+    margin: 3.9% 0;
+    // height: 672px;
+}
+
+.page_1_img{
+    width: 761px;
+    height: 672px;
+}
+
+.page_1_right_block{
+   margin-left: 2em;
+   margin-top: 2em;
+}
+
+.page_1_buttons{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.btn_target{
+    width: 30%;
+    height: 69px;
+    border: 1px solid black;
+    font-size: 1.5em;
+
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.btn_tasks{
+    width: 30%;
+    height: 69px;
+    border: 1px solid black;
+    font-size: 1.5em;
+
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.btn_methods{
+    width: 30%;
+    height: 69px;
+    border: 1px solid black;
+    font-size: 1.5em;
+
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.page_1_buttons >:hover{
+    box-shadow: none;
+    background-color: #8F81E3;
+
+}
+
+.page_1_text{
+    background-color: white;
+    padding: 15px;
+    margin-top: 2em;
+    height: 84.9%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 18px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+    overflow: auto;
+}
+
+.page_1_text p{
+    margin-top: 0.5em;
+    margin-bottom: 1em; 
+}

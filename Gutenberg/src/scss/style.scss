@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import 'variables';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $grey;
+    font-family: $baseFont; 
+}
+
+@import 'header';
+
+header{
+@include for_breakpoint(smartphone) {
+    font-size: 1.5em;
+}
+@include for_breakpoint(tablet) {
+    font-size: 1.75em;
+    nav ul{
+    flex-direction: row;
+    }
+    .header-nav-projects{
+        padding: 0 15px;
+    }
+}
+@include for_breakpoint(desctop) {
+    font-size: 2em;
+}
+@include for_breakpoint(tv) {
+    font-size: 2.5em;
+}
+}
+
+@import 'page1';
+
+.page_1{
+@include for_breakpoint(smartphone) {
+    
+    h2{
+        font-size: 3em; 
+    }
+}
+@include for_breakpoint(tablet) {
+    h2{
+        font-size: 4em; 
+    }
+    
+}
+@include for_breakpoint(desctop) {
+    .content_page_1{flex-direction: row};
+    h2{
+        font-size: 4.9em; 
+    }
+    .page_1_right_block{
+        margin-top: 0;
+     }
+}
+@include for_breakpoint(tv) {
+    .content_page_1{flex-direction: row};
+    h2{
+        font-size: 4.9em; 
+    }
+    .page_1_right_block{
+        margin-top: 0;
+     }
+}
+}
+
+@import 'page2';
+.page_2{
+    @include for_breakpoint(smartphone) {
+        
+        h2{
+            font-size: 3em; 
+        }
+    }
+    @include for_breakpoint(tablet) {
+        
+        h2{
+            font-size: 4em; 
+        }
+       
+        
+    }
+    @include for_breakpoint(desctop) {
+        .content_2{flex-direction: row};
+        h2{
+            font-size: 4.9em; 
+        }
+        .arrow_1{
+            height: 331px;
+        }
+        
+        .arrow_2{
+            height: 331px;
+        }
+    }
+    @include for_breakpoint(tv) {
+        .content_2{flex-direction: row};
+        h2{
+            font-size: 4.9em; 
+        }
+        .arrow_1{
+            height: 331px;
+        }
+        
+        .arrow_2{
+            height: 331px;
+        }
+    }
+    }
+
+    @import 'page3';
+    .page_3{
+        @include for_breakpoint(smartphone) {
+            
+            h2{
+                font-size: 3em; 
+            }
+        }
+        @include for_breakpoint(tablet) {
+            
+            h2{
+                font-size: 4em; 
+            }
+            .call_page3{
+                font-size: 2em;
+            }
+            
+        }
+        @include for_breakpoint(desctop) {
+            .content_page3{
+                display: flex;
+                flex-direction: row};
+            h2{
+                font-size: 4.9em; 
+            }
+            .contact{
+                font-size: 2.5em; 
+            }
+            .call_page3{
+                font-size: 3em;
+            }
+            
+        }
+        @include for_breakpoint(tv) {
+            .content_page3{
+                display: flex;
+                flex-direction: row};
+            h2{
+                font-size: 4.9em; 
+            }
+            .contact{
+                font-size: 3em; 
+            }
+            .call_page3{
+                font-size: 3.5em;
+            }
+        }
+    }

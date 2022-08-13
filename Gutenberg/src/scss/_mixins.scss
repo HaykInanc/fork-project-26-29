@@ -1,0 +1,27 @@
+@mixin box($color){
+    @if $color == null{
+        $color: black;
+    }
+    border: 1px solid $color;
+}
+
+$media_queries : (
+    'smartphone' : (min-width: 768px),
+    'tablet' : (min-width: 992px),
+    'desctop' : (min-width: 1280px),
+    'tv' : (min-width: 1480px)
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions: ();
+    @each $breakpoint in $breakpoints {
+        $conditions: append(
+            $conditions,
+            #{inspect(map-get($media_queries, $breakpoint))},
+            comma
+        );
+    }
+        @media #{$conditions} {
+            @content;
+        }
+} 
